@@ -10,6 +10,19 @@ body {
     color: var(--primary-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 h1,
 h2,
 h3,
@@ -72,6 +85,11 @@ address {
 }
 
 .hero-btn {
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+    border: transparent;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -125,6 +143,10 @@ address {
     color: var(--secondary-color);
 }
 
+.main-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .main-header-container {
     display: flex;
     align-items: center;
@@ -156,13 +178,19 @@ address {
 
 .contact-item:not(:last-child) {
     margin-right: 50px;
+    margin-left: auto;
 }
 
 .hero {
+    text-align: center;
     background-color: #2F303A;
 }
 
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -181,6 +209,22 @@ address {
     color: var(--primary-color);
 }
 
+.box-principle-list {
+    display: flex;
+}
+
+.box-principle-item {
+    width: 270px;
+}
+
+.box-principle-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.box-principle-title {
+    margin-bottom: 10px;
+}
+
 .box-principle-text {
     font-size: 14px;
     line-height: 1.71;
@@ -190,12 +234,21 @@ address {
 
 .box-work-title,
 .box-team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
+}
+
+.box-work-list {
+    display: flex;
+}
+
+.box-work-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .box-team-name {
