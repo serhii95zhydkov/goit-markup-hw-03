@@ -54,6 +54,7 @@ img {
 }
 
 address {
+    width: 231px;
     font-style: normal;
     font-weight: 400;
 }
@@ -182,6 +183,7 @@ address {
 }
 
 .hero {
+    padding: 200px 0;
     text-align: center;
     background-color: #2F303A;
 }
@@ -251,7 +253,30 @@ address {
     margin-right: 30px;
 }
 
+.box-team {
+    background-color: #F5F4FA;
+}
+
+.box-team-list {
+    display: flex;
+}
+
+.box-team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--tertiary-color);
+}
+
+.box-team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.box-team-image {
+    margin-bottom: 30px;
+}
+
 .box-team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -261,6 +286,7 @@ address {
 }
 
 .box-team-text {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -284,7 +310,18 @@ address {
 }
 
 .main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
+}
+
+.logo-link-footer {
+    margin-right: 0;
+    padding: 0;
+}
+
+.contact-footer {
+    margin-top: 20px;
 }
 
 .logo-footer,
@@ -301,4 +338,8 @@ address {
 
 .contact-footer-link {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
