@@ -94,6 +94,9 @@ address {
 }
 
 .logo-link {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -120,6 +123,39 @@ address {
 
 .contact-link {
     color: var(--secondary-color);
+}
+
+.main-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .hero {
