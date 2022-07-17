@@ -30,7 +30,6 @@ img {
 }
 
 address {
-    width: 231px;
     font-style: normal;
     font-weight: 400;
 }
@@ -124,7 +123,7 @@ address {
 .list-btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 }
 
 .logo-link {
@@ -251,6 +250,10 @@ address {
     color: var(--secondary-color);
 }
 
+.box-work {
+    padding-top: 0;
+}
+
 .box-work-title,
 .box-team-title {
     margin-bottom: 50px;
@@ -288,8 +291,9 @@ address {
     margin-right: 30px;
 }
 
-.box-team-image {
-    margin-bottom: 30px;
+.box-team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .box-team-name {
@@ -303,7 +307,6 @@ address {
 }
 
 .box-team-text {
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
