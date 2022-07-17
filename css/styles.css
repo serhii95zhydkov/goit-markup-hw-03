@@ -103,6 +103,10 @@ address {
 }
 
 .filter-btn {
+    display: inline-block;
+    padding: 6px 22px;
+    border-color: transparent;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -110,6 +114,17 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-color);
+    background-color: #F5F4FA;
+}
+
+.item-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+.list-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
 }
 
 .logo-link {
@@ -137,6 +152,8 @@ address {
 }
 
 .menu-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--primary-color);
 }
 
@@ -294,7 +311,24 @@ address {
     color: var(--secondary-color);
 }
 
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item-portfolio {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.container-portfolio {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .title-portfolio {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
